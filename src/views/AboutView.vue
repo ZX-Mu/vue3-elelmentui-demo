@@ -27,7 +27,7 @@ const text = ref('This is an about page')
     flex-direction: column;
 }
 .count {
-    font-size: 24px;
+    @apply text-[24px];
     background-color: $bg-color;
 }
 .btn {
