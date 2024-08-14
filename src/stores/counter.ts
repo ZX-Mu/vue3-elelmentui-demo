@@ -12,23 +12,24 @@ import { defineStore } from 'pinia'
 // })
 
 type STATE = {
-    count: number,
-    [propName: string]: any
+  count: number
+  [propName: string]: any
 }
 
 // 选项式的写法还是更舒服一点，组合式的store最后都要return，容易漏掉。。
 export const useCounterStore = defineStore('counter', {
-    state: () => ({
-        count: 0,
-    } as STATE),
-    getters: {
-        doubleCount: (state: STATE) => {
-            return state.count * 2
-        },
+  state: () =>
+    ({
+      count: 0,
+    }) as STATE,
+  getters: {
+    doubleCount: (state: STATE) => {
+      return state.count * 2
     },
-    actions: {
-        increment() {
-            this.count++
-        },
+  },
+  actions: {
+    increment() {
+      this.count++
     },
+  },
 })
