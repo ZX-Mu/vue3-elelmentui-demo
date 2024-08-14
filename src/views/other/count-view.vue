@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="count-page">
     <h1>{{ text }}</h1>
     <div class="count">Count: {{ counterStore.count }}</div>
     <div class="count">DoubleCount: {{ counterStore.doubleCount }}</div>
@@ -19,12 +19,8 @@ const text = ref('This is an about page')
 </script>
 
 <style lang="scss" scoped>
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+.count-page {
+  @apply flex flex-col items-center justify-center min-h-screen;
 }
 .count {
   @apply text-[24px];

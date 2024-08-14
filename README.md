@@ -1,29 +1,47 @@
 # vue3-elementui-demo
 
-Vue3 + Vite + ElementPlus + Pinia + TS + SCSS
+Vue3 + Vite + ElementPlus + Pinia + TS + SCSS + Tailwindcss
 
-This template should help get you started developing with Vue 3 in Vite.
+## 命令
 
-## Project Setup
+### 安装依赖
 
-```sh
+```shell
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 本地启动
 
-```sh
+```shell
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### 编译打包（不同环境）
 
-```sh
-npm run build
+```shell
+#采用开发环境配置（.env.development）
+npm run build:dev
+#采用测试环境配置（.env.test）
+npm run build:test
+#采用生产环境配置（.env.production）
+npm run build:pro
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### 格式化和格式校验
 
-```sh
+```shell
+#prettier一键格式化
+npm run format
+#eslint格式化
 npm run lint
+#scss/css等样式格式化
+npm run lint:stylelint
+#整体格式化 + 校验（git commit之前执行的也是这个）
+npm run lint:lint-staged
+```
+
+### 预览
+
+```shell
+npm run preview
 ```

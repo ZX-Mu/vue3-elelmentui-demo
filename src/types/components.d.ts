@@ -7,7 +7,9 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BaseTest: (typeof import('./../components/BaseTest.vue'))['default']
     ElButton: (typeof import('element-plus/es'))['ElButton']
+    ElConfigProvider: (typeof import('element-plus/es'))['ElConfigProvider']
     HelloWorld: (typeof import('./../components/HelloWorld.vue'))['default']
     IconCommunity: (typeof import('./../components/icons/IconCommunity.vue'))['default']
     IconDocumentation: (typeof import('./../components/icons/IconDocumentation.vue'))['default']
