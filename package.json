@@ -18,7 +18,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "element-plus": "^2.6.3",
+    "element-plus": "^2.9.10",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
@@ -48,7 +48,7 @@
     "postcss-scss": "^4.0.9",
     "prettier": "^3.0.3",
     "rollup-plugin-visualizer": "^5.12.0",
-    "sass": "^1.74.1",
+    "sass": "^1.89.0",
     "stylelint": "^16.8.1",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recess-order": "^5.0.1",

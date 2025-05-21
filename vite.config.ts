@@ -20,6 +20,8 @@ export default defineConfig(({ mode }) => {
     css: {
       preprocessorOptions: {
         scss: {
+          api: 'modern-compiler',
+          silenceDeprecations: ['legacy-js-api'],
           additionalData: `@use "@/styles/variables.scss" as *;`,
         },
       },
