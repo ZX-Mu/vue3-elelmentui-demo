@@ -2,6 +2,12 @@
 
 Vue3 + Vite + ElementPlus + Pinia + TS + SCSS + Tailwindcss
 
+## 分支ai-chat-elementplusx
+
+- 功能：体验Element-Plus-X库(2025.5.21)，官方处于前期功能迭代阶段，后续可以跟着更新体验
+- 缺点（1.2.0版本）：
+  - 目前不支持主题配置，且element-plus设置的主题失效；
+
 ## 命令
 
 ### 安装依赖
